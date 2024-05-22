@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Molisha Khosla- Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/Contact.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile.PNG" alt="Molisha Khosla" width="80" style="border-radius: 20%;">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="">Molisha Khosla</h1>
+
+          <p class="title">STUDENT</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:khoslam@kean.edu" class="contact-link">khoslam@kean.edu</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+19999999999" class="contact-link">012345678996</a>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/user/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/user_name" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link ><a class="navbar-link  active" href="Home_Page.html">Home</a></button>
+            
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link><a class="navbar-link  active" href="Aboutme.html">About Me</a></button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link><a class="navbar-link  active" href="WorkExperience.html">Experience</a></button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link><a class="navbar-link  active" href="ContactMe.html">Contact Me</a></button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Contact Me</h2>
+        </header><section class="about-text">
+          <form className="form-container" method="post" action="ContactForm.php">
+            <div className="mb-3">
+              <label htmlFor="titleInput" className="form-label">
+                Name
+              </label>
+              <input
+                type="text"
+                id="title"
+                name="title"
+                className="form-control"
+                placeholder="Enter Your Name"style="color: white;"
+              />
+            </div>
+        
+            <div className="mb-3">
+              <label htmlFor="artistInput" className="form-label">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                className="form-control"
+                placeholder="Enter Your Email" style="color: white;"
+              ></input>
+            </div>
+        
+            <div className="mb-3">
+              <label htmlFor="descriptionInput" className="form-label">
+                Subject
+              </label>
+              <textarea
+                type="text"
+                id="description"
+                name="description"
+                className="form-control"
+                placeholder="Enter Subject"
+                style="color: white; "
+              ></textarea>
+            </div>
+        
+            <div className="mb-3">
+              <label htmlFor="yearInput" className="form-label">
+                Created Year
+              </label>
+              <input
+                type="text"
+                id="year"
+                name="year"
+                className="form-control"
+                placeholder="Enter Portfolio Year Created" style="color: white;"
+              ></input>
+            </div>
+        
+            <div className="mb-3">
+              <label htmlFor="priceInput" className="form-label">
+                Available Hours price
+              </label>
+              <input
+                type="number"
+                id="price"
+                name="price"
+                className="form-control"
+                placeholder="Enter your per Hour price" style="color: white;"
+              ></input>
+            </div>
+            <div className="mb-3">
+              <label htmlFor="mediumInput" className="form-label">
+                Message
+              </label>
+              <input
+                type="Textfield"
+                id="Message"
+                name="Message"
+                className="form-control"
+                placeholder="Enter Your Message" style="color: white;"
+              ></input>
+            </div>
+        
+            <div className="mb-3">
+              <label htmlFor="styleInput" className="form-label">
+                Hire Freelance Work :
+              </label>
+              <input
+                type="text"
+                id="styleInput"
+                name="styleInput"
+                className="form-control"
+                placeholder="Enter Work id you want to hire for" style="color: white;"
+              ></input>
+            </div>
+        
+            <div className="mb-3">
+              <div className="input-group mb-3">
+                <label className="input-group-text" htmlFor="inputCategorySelect">
+                  Service Available Options :      
+                </label>
+                <select className="form-select" id="inputCategorySelect" name="inputCategorySelect">
+                  <option>Enter your choice...</option>
+                  <option value=web_development>Web Development</option>
+                  <option value=devops>Devops</option>
+                  <option value=cyber_security>Cyber Security</option>
+                  <option value=mobile_development>Mobile Development</option>
+                  <option value=others>Others</option>
+                </select>
+              </div>
+            </div>
+            <br>
+            <button type="submit" id="submitBtn" class="btn btn-warning btn-primary">Submit</button>
+          </form>
+        </section>
+        <footer>
+          <p>Author: Molisha Khosla<br>
+          <a href="mailto:khoslam@kean.edu" style="color: #bdaa05;">khoslam@kean.edu</a></p>
+          <p><span id="currentTime"></span></p>
+        </footer>
+      </article>
+    </div>
+  </main>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="Scripts/script.js"></script>
+  <script src="Scripts/script3.js"></script> 
+  <!-- Application Project Ends Here -->
+
+</body>
+
+</html>
